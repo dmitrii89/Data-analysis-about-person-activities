@@ -62,8 +62,7 @@ sum(is.na(data$steps))
 ## [1] 2304
 ```
 
-My strategy for filling in all of the missing values is to transform values from NA to the mean value of this interval.
-Lets calculate the difference in total steps by day, median and average value for this new data set.
+My strategy for filling in all of the missing values is to transform values from NA to the average value of this interval. For this reason I need my avgint variable. I substitute in for loop data's NA values with values calculated in variable avgint.
 
 
 ```r
